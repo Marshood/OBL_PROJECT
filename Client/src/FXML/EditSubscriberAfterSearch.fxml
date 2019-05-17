@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #20A5AE;" xmlns="http://javafx.com/javafx/8.0.191" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.EditSubscriberAfterSearchController">
+   <children>
+            <Button fx:id="Backbutt" layoutX="211.0" layoutY="461.0" mnemonicParsing="false" onAction="#backFunc" text="Back" />
+            <TextField fx:id="IDteXT" editable="false" layoutX="293.0" layoutY="73.0" />
+            <TextField fx:id="Passtext" editable="false" layoutX="293.0" layoutY="109.0" />
+            <TextField fx:id="SubscriberTypeText" layoutX="293.0" layoutY="145.0" />
+            <Text layoutX="157.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="157.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="157.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subscriber Type">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="157.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MemberShipStatus">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="160.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subscriber details" textAlignment="CENTER">
+               <font>
+                  <Font name="Leelawadee UI" size="36.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="RED" />
+                        <Stop color="BLACK" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <effect>
+                  <ColorAdjust />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="E_RESIZE" />
+               </cursor>
+            </Text>
+            <Button fx:id="savebutt" layoutX="309.0" layoutY="461.0" mnemonicParsing="false" onAction="#Save" text="Save" />
+            <Text layoutX="37.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello,">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="text1" layoutX="85.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="FirstNameText" layoutX="293.0" layoutY="215.0" />
+            <TextField fx:id="LastNameText" layoutX="293.0" layoutY="250.0" />
+            <TextField fx:id="emilTExt" layoutX="293.0" layoutY="285.0" />
+            <TextField fx:id="PhoneText" layoutX="293.0" layoutY="323.0" />
+            <TextField fx:id="GradiaionDateText" layoutX="293.0" layoutY="354.0" />
+            <Text layoutX="157.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="157.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="157.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="157.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="phone">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="157.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GradationDate">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="comboStatus" layoutX="297.0" layoutY="180.0" onAction="#comboStatusFunc" prefWidth="150.0" />
+            <Text layoutX="156.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Organization">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="154.0" layoutY="433.0" strokeType="OUTSIDE" strokeWidth="0.0" text="late Counter">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="lateConterText" layoutX="291.0" layoutY="415.0" />
+            <TextField fx:id="OrganizationText" layoutX="293.0" layoutY="383.0" />
+
+   </children>
+</Pane>

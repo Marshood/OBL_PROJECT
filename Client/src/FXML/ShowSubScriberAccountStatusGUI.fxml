@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane prefHeight="538.0" prefWidth="1321.0" style="-fx-background-color: #20A5AE;" xmlns="http://javafx.com/javafx/8.0.191" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.LateStudentTofreezeGUIController">
+   <children>
+      
+                  <Text fill="WHITE" layoutX="143.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student's Table">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="Logoutbutt" layoutX="1206.0" layoutY="482.0" mnemonicParsing="false" onAction="#LogoutFunc" text="Logout" />
+                  <Button fx:id="backbutt" layoutX="1206.0" layoutY="440.0" mnemonicParsing="false" onAction="#BackFunc" prefHeight="25.0" prefWidth="54.0" text="Back" />
+                  <Text fill="#0011ff" layoutX="8.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello,">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font></Text>
+                  <Text fx:id="UserIdText" fill="#2b03fc" layoutX="43.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font></Text>
+                  <Button fx:id="freezeStudentbutt" layoutX="95.0" layoutY="366.0" mnemonicParsing="false" onAction="#freezeStudentbuttfunc" text="Freeze Student" />
+                  <Button fx:id="LockStudentButt" layoutX="294.0" layoutY="366.0" mnemonicParsing="false" onAction="#LockStudentButtFunc" prefHeight="25.0" prefWidth="95.0" text="Lock Student" />
+                  <Button fx:id="unfreezebutt" layoutX="95.0" layoutY="427.0" mnemonicParsing="false" onAction="#unfreezebuttFunc" prefHeight="25.0" prefWidth="95.0" text="UnFreeze " />
+                  <Button fx:id="Unlockbutt" layoutX="294.0" layoutY="427.0" mnemonicParsing="false" onAction="#UnlockbuttFunc" prefHeight="25.0" prefWidth="95.0" text="UnLock" />
+                  <Button layoutX="474.0" layoutY="39.0" mnemonicParsing="false" onAction="#ActiveAccountFunc" text="Active" />
+                  <Button layoutX="549.0" layoutY="39.0" mnemonicParsing="false" onAction="#SuspendedAccountFunc" text="Suspended" />
+                  <Button layoutX="649.0" layoutY="39.0" mnemonicParsing="false" onAction="#LockedAccountFunc" text="Locked" />
+                  <Text fill="WHITE" layoutX="546.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Status:-" />
+                  <DatePicker fx:id="DatePicker" layoutX="499.0" layoutY="399.0" onAction="#DatePickerFunc" prefHeight="25.0" prefWidth="95.0" />
+                  <Text fx:id="SelectDateText" fill="WHITE" layoutX="515.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Date:" />
+                  <Button fx:id="confirmbutt" layoutX="629.0" layoutY="399.0" mnemonicParsing="false" onAction="#confirmbuttfunc" text="Confirm" />
+                  <TableView fx:id="table" layoutX="21.0" layoutY="73.0" onMouseClicked="#selectedSub" prefHeight="268.0" prefWidth="1275.0">
+                     <columns>
+                        <TableColumn fx:id="IDSubScriber" minWidth="40.0" prefWidth="88.0" text="ID Subscriber" />
+                        <TableColumn fx:id="Pass" minWidth="40.0" prefWidth="88.0" text="Password" />
+                        <TableColumn fx:id="SubScriberType" minWidth="40.0" prefWidth="103.0" text="Subscriber Type" />
+                        <TableColumn fx:id="memberShip" minWidth="40.0" prefWidth="121.0" text="MemberSHip status" />
+                        <TableColumn fx:id="FirstName" minWidth="40.0" prefWidth="86.0" text="Fisrt Name" />
+                        <TableColumn fx:id="LastName" minWidth="40.0" prefWidth="82.0" text="Last Name" />
+                        <TableColumn fx:id="Email" minWidth="0.0" prefWidth="137.0" text="Email" />
+                        <TableColumn fx:id="Phone" minWidth="0.0" prefWidth="95.0" text="Phone" />
+                        <TableColumn fx:id="GradationDate" minWidth="40.0" prefWidth="125.0" text="GradationDate" />
+                        <TableColumn fx:id="lateCounter" minWidth="0.0" prefWidth="114.0" text="lateCounter" />
+                        <TableColumn fx:id="Organization" minWidth="40.0" prefWidth="98.0" text="Organization" />
+                        <TableColumn fx:id="EndFreezingDate" minWidth="40.0" prefWidth="135.0" text="End Freezing Date" />
+                     </columns>
+                  </TableView>
+             
+   </children>
+</Pane>

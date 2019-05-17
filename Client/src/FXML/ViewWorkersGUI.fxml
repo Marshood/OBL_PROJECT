@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane prefHeight="518.0" prefWidth="807.0" style="-fx-background-color: #20A5AE;" xmlns="http://javafx.com/javafx/8.0.191" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.ViewWorkersController">
+   <children>
+      
+      				<Text fx:id="NoWorkersFound" layoutX="732.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0">
+      					<font>
+      						<Font size="36.0" />
+      					</font>
+      					<fill>
+      						<LinearGradient endX="1.0" endY="0.5922330097087378" proportional="false" startX="1.0" startY="0.6650485436893204">
+      							<stops>
+      								<Stop color="BLACK" />
+      								<Stop color="BLACK" offset="0.007246376811594203" />
+      								<Stop color="RED" offset="1.0" />
+      							</stops>
+      						</LinearGradient>
+      					</fill>
+      				</Text>
+      				<Text fill="WHITE" layoutX="291.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OBL Workers" wrappingWidth="282.9716796875">
+      					<font>
+      						<Font name="System Bold" size="36.0" />
+      					</font>
+      				</Text>
+      				<TableView fx:id="table" layoutX="43.0" layoutY="166.0" prefHeight="271.0" prefWidth="722.0">
+      					<columns>
+      						<TableColumn fx:id="LibrarianID" prefWidth="84.99996948242188" text="Librarian ID" />
+      						<TableColumn fx:id="FirstName" minWidth="0.0" prefWidth="87.0" text="First Name" />
+      						<TableColumn fx:id="LastName" prefWidth="81.0" text="Last Name" />
+      						<TableColumn fx:id="Email" prefWidth="225.00003051757812" text="Email" />
+      						<TableColumn fx:id="PhoneNumber" minWidth="1.0" prefWidth="112.0" text="Phone Number" />
+      						<TableColumn fx:id="Organization" minWidth="0.0" prefWidth="126.0" text="Orginaization" />
+      					</columns>
+      				</TableView>
+      				<TextField fx:id="SearchBox" layoutX="33.0" layoutY="110.0" />
+      				<ChoiceBox fx:id="SearchOptions" layoutX="220.0" layoutY="110.0" prefHeight="25.0" prefWidth="149.0" />
+      				<Button fx:id="SearchBTN" layoutX="404.0" layoutY="110.0" mnemonicParsing="false" onAction="#FindWorkers" prefHeight="25.0" prefWidth="57.0" text="search" />
+      				<Button layoutX="21.0" layoutY="463.0" mnemonicParsing="false" onAction="#Exit" prefHeight="25.0" prefWidth="57.0" text="Back" />
+      			
+   </children>
+</Pane>
