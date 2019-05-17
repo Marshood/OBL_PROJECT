@@ -1,6 +1,11 @@
+# OBL_Project<br> 
+(client side, server side), during the course of studies that talks about developing an information system to the college library, using Java and JavaFX and workbench with eclipse   <br> 
 OBL_ Project 
-Team Members:
-Aroob daqduqi , Marshood Ayoub , Amir amara, Ziad Nasrawi 
+Team Members:<br> 
+Aroob daqduqi  
+ Marshood Ayoub  ([Marshood](https://github.com/Marshood).) <br>
+Amir amara<br> 
+Ziad Nasrawi ([nasrawiziad](https://github.com/nasrawiziad).) <br>
 
 Semester A 2019 Software Engineering Project.
 
