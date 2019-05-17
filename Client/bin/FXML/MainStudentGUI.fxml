@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.191" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.MainStudentGUI">
+   <children>
+     
+                  <ImageView fitHeight="500.0" fitWidth="600.0">
+                     <image>
+                        <Image url="@../Pictures/bluebackground.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="198.0" fitWidth="532.0" layoutX="50.0" layoutY="183.0" opacity="0.3">
+                     <image>
+                        <Image url="@../Pictures/white.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="Greeting" fill="WHITE" layoutX="8.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="hello">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="UserIDtext" fill="WHITE" layoutX="14.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="name">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="295.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="History">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="105.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Books">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="454.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Account">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="35.0" fitWidth="87.0" layoutX="504.0" layoutY="451.0" opacity="0.93">
+                     <image>
+                        <Image url="@../Pictures/logoutbut.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="126.0" fitWidth="122.0" layoutX="425.0" layoutY="214.0">
+                     <image>
+                        <Image url="@../Pictures/myaccountpng.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="101.0" fitWidth="109.0" layoutX="263.0" layoutY="220.0">
+                     <image>
+                        <Image url="@../Pictures/hisotyrbutton.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="167.0" fitWidth="219.0" layoutX="387.0" layoutY="-3.0" opacity="0.87">
+                     <image>
+                        <Image url="@../Pictures/clouds.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="101.0" fitWidth="122.0" layoutX="82.0" layoutY="222.0">
+                     <image>
+                        <Image url="@../Pictures/search.png" />
+                     </image>
+                  </ImageView>
+                  <Pane layoutX="257.0" layoutY="217.0" onMouseClicked="#OpenOrderHistory" prefHeight="107.0" prefWidth="122.0" />
+                  <Pane layoutX="431.0" layoutY="222.0" onMouseClicked="#MyAccount" prefHeight="107.0" prefWidth="109.0" />
+                  <Pane layoutX="504.0" layoutY="451.0" onMouseClicked="#LogOUT" prefHeight="35.0" prefWidth="87.0" />
+                  <Pane layoutX="77.0" layoutY="208.0" onMouseClicked="#OpenSerachBooks" prefHeight="119.0" prefWidth="133.0" />
+ 
+   </children>
+</Pane>

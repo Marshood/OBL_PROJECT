@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="582.0" prefWidth="1311.0" style="-fx-background-color: #20A5AE;" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.191" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.StockMangmentController">
+  <tabs>
+    <Tab text="Add Book">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="553.0" prefWidth="711.0">
+               <children>
+                  <Text layoutX="89.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Name" />
+                  <Text layoutX="89.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author Name" />
+                  <Text layoutX="89.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edition Number" />
+                  <Text layoutX="89.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Publish Date" />
+                  <Text layoutX="93.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category" />
+                  <Text layoutX="89.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descrption" />
+                  <Text layoutX="89.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Copy Number" />
+                  <Text layoutX="89.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Purchase Date" />
+                  <Text layoutX="89.0" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shelf Place" />
+                  <TextField fx:id="AddBookName" layoutX="199.0" layoutY="50.0" prefHeight="25.0" prefWidth="149.0" />
+                  <TextField fx:id="AddBookAuthor" layoutX="199.0" layoutY="86.0" />
+                  <TextField fx:id="AddEditionNumber" layoutX="200.0" layoutY="119.0" prefHeight="25.0" prefWidth="150.0" />
+                  <TextField fx:id="publish" layoutX="199.0" layoutY="158.0" prefHeight="25.0" prefWidth="152.0" />
+                  <ChoiceBox fx:id="catgory" layoutX="199.0" layoutY="210.0" prefHeight="27.0" prefWidth="154.0" />
+                  <TextField fx:id="decrption" layoutX="199.0" layoutY="267.0" prefHeight="25.0" prefWidth="155.0" />
+                  <TextField fx:id="copiesnumber" layoutX="199.0" layoutY="303.0" prefHeight="25.0" prefWidth="154.0" />
+                  <TextField fx:id="purchasedate" layoutX="199.0" layoutY="349.0" prefHeight="25.0" prefWidth="154.0" />
+                  <TextField fx:id="shelfplace" layoutX="199.0" layoutY="387.0" prefHeight="25.0" prefWidth="154.0" />
+                  <Button layoutX="213.0" layoutY="479.0" mnemonicParsing="false" onAction="#confirm" text="ADD" />
+                  <Text fx:id="saved" fill="#09ff00" layoutX="47.0" layoutY="490.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="Failed" fill="RED" layoutX="293.0" layoutY="509.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font size="38.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="89.0" layoutY="447.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Requested" />
+                  <ChoiceBox fx:id="requested1" layoutX="199.0" layoutY="430.0" prefHeight="27.0" prefWidth="158.0" />
+                  <Button layoutX="457.0" layoutY="479.0" mnemonicParsing="false" onAction="#LogoUtFunc" text="LogOut" />
+                  <Button layoutX="397.0" layoutY="50.0" mnemonicParsing="false" onAction="#SelectFile" text="Choose File" />
+                  <ImageView fitHeight="272.0" fitWidth="569.0" layoutX="728.0" layoutY="15.0">
+                     <image>
+                        <Image url="@../Pictures/Library-management-system.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="filetxtname" layoutX="498.0" layoutY="50.0" />
+                  <Button layoutX="37.0" layoutY="481.0" mnemonicParsing="false" onAction="#back" text="Back" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Search Book And Edit">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="553.0" prefWidth="1180.0">
+               <children>
+                  <ImageView fitHeight="260.0" fitWidth="515.0" layoutX="807.0" layoutY="-10.0" opacity="0.7">
+                     <image>
+                        <Image url="@../Pictures/Library-management-system.png" />
+                     </image>
+                  </ImageView>
+                  <ChoiceBox fx:id="findbookcatgory" layoutX="180.0" layoutY="32.0" onMouseClicked="#selectsearchtype" prefHeight="25.0" prefWidth="138.0" />
+                  <Button layoutX="497.0" layoutY="32.0" mnemonicParsing="false" onAction="#FindBook" text="Search" />
+                  <TextField fx:id="FindBookName" layoutX="14.0" layoutY="32.0" promptText="Insert Text Here:" />
+                  <Text layoutX="1017.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Name" />
+                  <Text layoutX="1017.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author Name" />
+                  <Text layoutX="1017.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edition Number" />
+                  <Text layoutX="1017.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Publish Date" />
+                  <Text layoutX="1017.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category" />
+                  <Text layoutX="1017.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descrption" />
+                  <Text layoutX="1017.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Copy Number" />
+                  <Text layoutX="1017.0" layoutY="392.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Purchase Date" />
+                  <Text layoutX="1017.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shelf Place" />
+                  <Text layoutX="1017.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Catlog Number" />
+                  <Text layoutX="1017.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Requested" />
+                  <TextField fx:id="BookName2" layoutX="1131.0" layoutY="76.0" />
+                  <TextField fx:id="BookAuthor2" layoutX="1131.0" layoutY="108.0" />
+                  <TextField fx:id="EditionNumber2" layoutX="1131.0" layoutY="144.0" />
+                  <TextField fx:id="publish2" layoutX="1131.0" layoutY="184.0" />
+                  <TextField fx:id="catalognumber2" editable="false" layoutX="1131.0" layoutY="258.0" />
+                  <TextField fx:id="decrption2" layoutX="1131.0" layoutY="291.0" />
+                  <TextField fx:id="copiesnumber2" layoutX="1131.0" layoutY="329.0" />
+                  <ChoiceBox fx:id="catgory2" layoutX="1131.0" layoutY="217.0" prefWidth="150.0" />
+                  <TextField fx:id="purchasedate2" layoutX="1131.0" layoutY="375.0" />
+                  <TextField fx:id="shelfplace2" layoutX="1131.0" layoutY="413.0" />
+                  <ChoiceBox fx:id="requested2" layoutX="1131.0" layoutY="454.0" prefWidth="150.0" />
+                  <Button fx:id="savebut" layoutX="1131.0" layoutY="501.0" mnemonicParsing="false" onAction="#SaveEdit2" text="Save" />
+                  <Text fx:id="NoBooksFound" fill="RED" layoutX="418.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <TableView fx:id="tabel" layoutX="6.0" layoutY="66.0" onMouseClicked="#Edit2" prefHeight="471.0" prefWidth="996.0">
+                    <columns>
+                      <TableColumn fx:id="BookName" minWidth="0.0" prefWidth="74.0" text="BookName" />
+                        <TableColumn fx:id="BookAuthor" prefWidth="96.0" text="BookAuthor" />
+                        <TableColumn fx:id="EditionNumber" prefWidth="66.0" text="Edition " />
+                        <TableColumn fx:id="PublishDate" prefWidth="92.5" text="Publish Date" />
+                        <TableColumn fx:id="BookCategory" prefWidth="78.5" text="Catagory" />
+                      <TableColumn fx:id="BookID" prefWidth="133.5" text="Catalog Number" />
+                        <TableColumn fx:id="BookDescription" prefWidth="129.0" text="Description" />
+                        <TableColumn fx:id="CopyNumber" prefWidth="95.0" text="Copy Number" />
+                        <TableColumn fx:id="PurchaseDate" prefWidth="101.0" text="Purchase Date" />
+                        <TableColumn fx:id="ShelfDate" prefWidth="58.0" text="Shelf" />
+                        <TableColumn fx:id="Requested" prefWidth="71.5" text="Requested" />
+                    </columns>
+                  </TableView>
+                  <Text fx:id="Updating" fill="#00ff33" layoutX="644.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Text>
+                  <ChoiceBox fx:id="catgoryForSearch" layoutX="332.0" layoutY="32.0" onMousePressed="#selectsearchtype" prefWidth="150.0" />
+                  <Button layoutX="690.0" layoutY="32.0" mnemonicParsing="false" onAction="#LogoUtFunc" text="LogOut" />
+                  <Button layoutX="559.0" layoutY="32.0" mnemonicParsing="false" onAction="#back" text="Back" />
+                  <Text layoutX="191.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Search Option :" />
+                  <Text layoutX="349.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Catagory Type Only*" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Delete Book">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="212.0" fitWidth="440.0" layoutX="865.0" opacity="0.7">
+                     <image>
+                        <Image url="@../Pictures/Library-management-system.png" />
+                     </image>
+                  </ImageView>
+                  <TableView fx:id="dtabel2" layoutX="14.0" layoutY="68.0" onMouseClicked="#Edit3" prefHeight="471.0" prefWidth="996.0">
+                     <columns>
+                        <TableColumn fx:id="dBookName2" minWidth="0.0" prefWidth="74.0" text="BookName" />
+                        <TableColumn fx:id="dBookAuthor2" prefWidth="96.0" text="BookAuthor" />
+                        <TableColumn fx:id="dEditionNumber2" prefWidth="66.0" text="Edition " />
+                        <TableColumn fx:id="dPublishDate2" prefWidth="92.5" text="Publish Date" />
+                        <TableColumn fx:id="dBookCategory2" prefWidth="78.5" text="Catagory" />
+                        <TableColumn fx:id="dBookID2" prefWidth="133.5" text="Catalog Number" />
+                        <TableColumn fx:id="dBookDescription2" prefWidth="129.0" text="Description" />
+                        <TableColumn fx:id="dCopyNumber2" prefWidth="95.0" text="Copy Number" />
+                        <TableColumn fx:id="dPurchaseDate2" prefWidth="101.0" text="Purchase Date" />
+                        <TableColumn fx:id="dShelfDate2" prefWidth="58.0" text="Shelf" />
+                        <TableColumn fx:id="dRequested2" prefWidth="71.5" text="Requested" />
+                     </columns>
+                  </TableView>
+                  <TextField fx:id="SearchInputTab3" layoutX="14.0" layoutY="21.0" promptText="Insert Text Here" />
+                  <ChoiceBox fx:id="SelectSearchTypeTab3" layoutX="198.0" layoutY="21.0" prefWidth="150.0" />
+                  <Button layoutX="379.0" layoutY="21.0" mnemonicParsing="false" onAction="#FindBookDelete" text="Find" />
+                  <Button fx:id="DeleteBut" layoutX="1072.0" layoutY="94.0" mnemonicParsing="false" onAction="#DeleteBook" text="Delete" />
+                  <Text fx:id="NoBooksFoundDelete" fill="RED" layoutX="467.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Text>
+                  <Button layoutX="439.0" layoutY="21.0" mnemonicParsing="false" onAction="#LogoUtFunc" text="LogOut" />
+                  <Button layoutX="512.0" layoutY="21.0" mnemonicParsing="false" onAction="#back" text="Back" />
+                  <Text layoutX="222.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Search Type:" />
+               </children></AnchorPane>
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>

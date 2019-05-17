@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #20A5AE;" xmlns="http://javafx.com/javafx/8.0.191" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.MainLibrarianGUI">
+   <children>
+      <ImageView fitHeight="301.0" fitWidth="517.0" layoutX="42.0" layoutY="96.0" opacity="0.3">
+         <image>
+            <Image url="@../Pictures/white.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="194.0" fitWidth="192.0" layoutX="402.0" layoutY="299.0">
+         <image>
+            <Image url="@../Pictures/librarian.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="68.0" fitWidth="73.0" layoutX="473.0" layoutY="160.0">
+         <image>
+            <Image url="@../Pictures/book%20(1).png" />
+         </image>
+      </ImageView>
+                  <Text fx:id="Greeting" fill="WHITE" layoutX="14.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello,">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font></Text>
+                  <Text fx:id="UserIDTExt" fill="WHITE" layoutX="14.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="97.0" layoutY="80.0" stroke="#c9c8c8" strokeType="OUTSIDE" strokeWidth="0.0" text="Librarian Main Menu" textAlignment="CENTER" wrappingWidth="393.7734375">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="68.0" fitWidth="82.0" layoutX="341.0" layoutY="148.0">
+         <image>
+            <Image url="@../Pictures/add-friend.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="341.0" layoutY="148.0" onMouseClicked="#AddNewSunscriber" prefHeight="68.0" prefWidth="82.0" />
+      <Text fill="WHITE" layoutX="350.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add New Subscriber" textAlignment="CENTER" wrappingWidth="63.806640625">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Text>
+      <ImageView fitHeight="68.0" fitWidth="82.0" layoutX="90.0" layoutY="276.0">
+         <image>
+            <Image url="@../Pictures/student.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="94.0" layoutY="276.0" onMouseClicked="#ViewSubscriber" prefHeight="68.0" prefWidth="73.0" />
+      <Text fill="WHITE" layoutX="99.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="view Subscriber" textAlignment="CENTER" wrappingWidth="63.806640625">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Pane layoutX="473.0" layoutY="160.0" onMouseClicked="#StockManage" prefHeight="68.0" prefWidth="73.0" />
+      <Text fill="WHITE" layoutX="468.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search &amp; Stock management" textAlignment="CENTER" wrappingWidth="81.99999332427979">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="68.0" fitWidth="82.0" layoutX="90.0" layoutY="160.0">
+         <image>
+            <Image url="@../Pictures/bookk.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="33.0" fitWidth="39.0" layoutX="153.0" layoutY="144.0">
+         <image>
+            <Image url="@../Pictures/click.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="90.0" layoutY="160.0" onMouseClicked="#IssueBook" prefHeight="68.0" prefWidth="82.0" />
+      <Text fill="WHITE" layoutX="99.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Issue Book" textAlignment="CENTER" wrappingWidth="63.806640625">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="68.0" fitWidth="82.0" layoutX="212.0" layoutY="160.0">
+         <image>
+            <Image url="@../Pictures/bookk.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="39.0" layoutX="265.0" layoutY="144.0">
+         <image>
+            <Image url="@../Pictures/reload.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="212.0" layoutY="160.0" onMouseClicked="#ReturnBook" prefHeight="68.0" prefWidth="82.0" />
+      <Text fill="WHITE" layoutX="216.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Return Book" textAlignment="CENTER" wrappingWidth="73.00000078976154">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="51.0" layoutY="122.0" opacity="0.76" strokeType="OUTSIDE" strokeWidth="0.0" text="please press on pictures to perfurm actions" textAlignment="CENTER" wrappingWidth="322.806640625">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="33.0" fitWidth="82.0" layoutX="259.0" layoutY="453.0">
+         <image>
+            <Image url="@../Pictures/logoutbut.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="259.0" layoutY="454.0" onMouseClicked="#exit" prefHeight="32.0" prefWidth="82.0" />
+
+   </children>
+</Pane>
