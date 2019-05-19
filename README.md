@@ -4,7 +4,7 @@ OBL_ Project
 Team Members:<br>    
 Aroob daqduqi    ([AroobDaqduqi](https://github.com/aroobdaqduqi).) <br>
  Marshood Ayoub  ([Marshood](https://github.com/Marshood).) <br>
-Amir amara<br> 
+Amir amara<br> ([AmirAmara](https://github.com/AmirAmArA).) <br>
 Ziad Nasrawi ([nasrawiziad](https://github.com/nasrawiziad).) <br>
 
 Semester A 2019 Software Engineering Project.
